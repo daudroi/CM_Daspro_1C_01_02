@@ -140,5 +140,6 @@ public class inventoriKafe {
         } else {
             System.out.println("Stok awal harus lebih dari 0. Item tidak berhasil ditambahkan.");
         }
+        tampilkanInventori();
     }
 }
