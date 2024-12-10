@@ -8,6 +8,7 @@ public class inventoriKafe {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+<<<<<<< HEAD
         inventori[0][0] = "Kopi Hitam";
         inventori[0][1] = "Minuman";
         stok[0] = 10;
@@ -65,4 +66,20 @@ public class inventoriKafe {
     static void tambahItemBaru(Scanner sc) {
       
     }
+=======
+        inventori[0][0] = "Kopi Latte";
+        inventori[0][1] = "Minuman";
+        stok[0] = 20;
+
+        inventori[1][0] = "Kue Brownies";
+        inventori[1][1] = "Makanan";
+        stok[1] = 15;
+
+        inventori[2][0] = "Teh Tarik";
+        inventori[2][1] = "Minuman";
+        stok[2] = 30;
+        menu(sc);
+    }
+
+>>>>>>> b4eb65855afb7b1787224ea2c1e4d56b973e9e3a
 }
