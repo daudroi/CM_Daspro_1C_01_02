@@ -59,15 +59,28 @@ public class inventoriKafe {
         if (jumlahItem == 0) {
             System.out.println("Inventori kosong. Tambahkan item baru terlebih dahulu.");
         } else {
-            System.out.printf("%-3s %-20s %-15s %-5s", "No", "Nama Item", "Kategori", "Stok");
-            System.out.println("");
+            System.out.printf("%-3s %-20s %-15s %-5s%n", "No", "Nama Item", "Kategori", "Stok");
             System.out.println("---------------------------------------------------");
+    
             for (int i = 0; i < jumlahItem; i++) {
-                System.out.printf("%-3d %-20s1 %-15s %-5d", (i + 1), inventori[i][0], inventori[i][1], stok[i]);
-                System.out.println("");
+                System.out.printf("%-3d", (i + 1));  
+    
+                for (int j = 0; j < jumlahItem; j++) {
+                    if (j == 0) {
+                        System.out.printf(" %-20s", inventori[i][j]);  
+                    } else if (j == 1) {
+                        System.out.printf(" %-15s", inventori[i][j]);  
+                    } else {
+                        System.out.printf(" %-5d", stok[i]);   
+                    }
+                }
+                System.out.println(); 
             }
         }
     }
+    
+    
+    
 
     static void tambahStok(Scanner sc) {
       
