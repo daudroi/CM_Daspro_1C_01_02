@@ -8,7 +8,6 @@ public class inventoriKafe {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-<<<<<<< HEAD
         inventori[0][0] = "Kopi Hitam";
         inventori[0][1] = "Minuman";
         stok[0] = 10;
@@ -56,7 +55,18 @@ public class inventoriKafe {
     }
 
     static void tampilkanInventori() {
-       
+        System.out.println("===== DATA INVENTORI =====");
+        if (jumlahItem == 0) {
+            System.out.println("Inventori kosong. Tambahkan item baru terlebih dahulu.");
+        } else {
+            System.out.printf("%-3s %-20s %-15s %-5s", "No", "Nama Item", "Kategori", "Stok");
+            System.out.println("");
+            System.out.println("---------------------------------------------------");
+            for (int i = 0; i < jumlahItem; i++) {
+                System.out.printf("%-3d %-20s1 %-15s %-5d", (i + 1), inventori[i][0], inventori[i][1], stok[i]);
+                System.out.println("");
+            }
+        }
     }
 
     static void tambahStok(Scanner sc) {
@@ -66,20 +76,4 @@ public class inventoriKafe {
     static void tambahItemBaru(Scanner sc) {
       
     }
-=======
-        inventori[0][0] = "Kopi Latte";
-        inventori[0][1] = "Minuman";
-        stok[0] = 20;
-
-        inventori[1][0] = "Kue Brownies";
-        inventori[1][1] = "Makanan";
-        stok[1] = 15;
-
-        inventori[2][0] = "Teh Tarik";
-        inventori[2][1] = "Minuman";
-        stok[2] = 30;
-        menu(sc);
-    }
-
->>>>>>> b4eb65855afb7b1787224ea2c1e4d56b973e9e3a
 }
